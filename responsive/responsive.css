@@ -1,0 +1,129 @@
+body {
+    /* Define la fuente principal de la página. */
+    font-family: "Baloo 2", "Segoe UI", sans-serif;
+}
+
+.container {
+    /* Activa CSS Grid. */
+    display: grid;
+    /* Separa los elementos cinco píxeles. */
+    gap: 5px;
+    /* Añade un margen exterior. */
+    margin: 14px;
+    /* Crea tres columnas iguales. */
+    grid-template-columns: repeat(3, 1fr);
+    /* Define la proporción de las cuatro filas. */
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    /* Define la posición de cada área en la cuadrícula. */
+    grid-template-areas:
+        /* Ocupa toda la primera fila. */
+        "header header header"
+        /* Coloca sidebar a la izquierda y main a la derecha. */
+        "sidebar main main"
+        /* Coloca sidebar, section y content en la tercera fila. */
+        "sidebar section content"
+        /* Ocupa toda la última fila. */
+        "footer footer footer";
+}
+
+header {
+    /* Vincula este elemento con el área header. */
+    grid-area: header;
+    /* Define el color de fondo. */
+    background-color: rgb(201, 201, 13);
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el contenido horizontalmente. */
+    justify-content: center;
+    /* Centra el contenido verticalmente. */
+    align-items: center;
+}
+
+aside {
+    /* Vincula este elemento con el área sidebar. */
+    grid-area: sidebar;
+    /* Define el color de fondo. */
+    background-color: rgb(75, 169, 62);
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el contenido horizontalmente. */
+    justify-content: center;
+    /* Centra el contenido verticalmente. */
+    align-items: center;
+}
+
+main {
+    /* Vincula este elemento con el área main. */
+    grid-area: main;
+    /* Define el color de fondo. */
+    background-color: rgb(180, 9, 55);
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el contenido horizontalmente. */
+    justify-content: center;
+    /* Centra el contenido verticalmente. */
+    align-items: center;
+}
+
+section {
+    /* Vincula este elemento con el área section. */
+    grid-area: section;
+    /* Define el color de fondo. */
+    background-color: rgb(97, 9, 180);
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el contenido horizontalmente. */
+    justify-content: center;
+    /* Centra el contenido verticalmente. */
+    align-items: center;
+}
+
+content {
+    /* Vincula este elemento con el área content. */
+    grid-area: content;
+    /* Define el color de fondo. */
+    background-color: rgb(180, 9, 163);
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el contenido horizontalmente. */
+    justify-content: center;
+    /* Centra el contenido verticalmente. */
+    align-items: center;
+}
+
+footer {
+    /* Vincula este elemento con el área footer. */
+    grid-area: footer;
+    /* Define el color de fondo. */
+    background-color: rgb(9, 120, 180);
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el contenido horizontalmente. */
+    justify-content: center;
+    /* Centra el contenido verticalmente. */
+    align-items: center;
+}
+
+/* Aplica estos estilos en pantallas de hasta 600 píxeles. */
+@media (max-width: 600px) {
+    .container {
+        /* Cambia la cuadrícula a una sola columna. */
+        grid-template-columns: 1fr;
+        /* Crea seis filas automáticas. */
+        grid-template-rows: repeat(6, auto);
+        /* Apila las áreas en orden vertical. */
+        grid-template-areas:
+            /* Primera fila: cabecera. */
+            "header"
+            /* Segunda fila: barra lateral. */
+            "sidebar"
+            /* Tercera fila: contenido principal. */
+            "main"
+            /* Cuarta fila: sección. */
+            "section"
+            /* Quinta fila: contenido adicional. */
+            "content"
+            /* Sexta fila: pie de página. */
+            "footer";
+    }
+}

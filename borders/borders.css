@@ -1,0 +1,199 @@
+/* Fuente principal de toda la página. */
+body {
+    /* Define la fuente del texto. */
+    font-family: "Baloo 2", "Segoe UI", sans-serif;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/* Centra el contenido de la cabecera y añade una línea inferior. */
+header {
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el contenido horizontalmente. */
+    justify-content: center;
+    /* Centra el contenido verticalmente. */
+    align-items: center;
+    /* Añade un borde negro en la parte inferior. */
+    border-bottom: 2px solid black;
+    /* Redondea las esquinas del borde. */
+    border-radius: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/* Centra la sección principal dentro de la página. */
+main {
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra la sección horizontalmente. */
+    justify-content: center;
+    /* Centra la sección verticalmente. */
+    align-items: center;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/* Organiza las figuras en una cuadrícula de tres columnas. */
+section {
+    /* Activa el diseño de cuadrícula. */
+    display: grid;
+    /* Crea tres columnas del mismo tamaño. */
+    grid-template-columns: repeat(3, 1fr);
+    /* Crea dos filas del mismo tamaño. */
+    grid-template-rows: repeat(2, 1fr);
+    /* Añade espacio interior. */
+    padding: 20px;
+    /* Añade espacio entre las figuras. */
+    gap: 2rem;
+}
+
+/* Cuadrado con bordes ligeramente redondeados. */
+.square {
+    /* Centra el texto horizontal y verticalmente. */
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el contenido horizontalmente. */
+    justify-content: center;
+    /* Centra el contenido verticalmente. */
+    align-items: center;
+    /* Define el color de fondo. */
+    background-color: rgb(19, 104, 125);
+    /* Redondea las esquinas. */
+    border-radius: 8px;
+    /* Define el color del texto. */
+    padding: 10px;
+    /* Añade espacio interior. */
+    color: white;
+    /* Pone el texto en negrita. */
+    font-weight: bold;
+    /* Define el ancho. */
+    width: 150px;
+    /* Define la altura. */
+    height: 150px;
+}
+
+/* Cuadrado con bordes más redondeados. */
+.square-2 {
+    /* Centra el texto horizontal y verticalmente. */
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el contenido horizontalmente. */
+    justify-content: center;
+    /* Centra el contenido verticalmente. */
+    align-items: center;
+    /* Define el color de fondo. */
+    background-color: rgb(19, 63, 125);
+    /* Redondea las esquinas. */
+    border-radius: 20px;
+    /* Añade espacio interior. */
+    padding: 10px;
+    /* Define el color del texto. */
+    color: white;
+    /* Pone el texto en negrita. */
+    font-weight: bold;
+    /* Define el ancho. */
+    width: 150px;
+    /* Define la altura. */
+    height: 150px;
+}
+
+/* Círculo creado usando un radio del 50%. */
+.circle {
+    /* Centra el texto horizontal y verticalmente. */
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el contenido horizontalmente. */
+    justify-content: center;
+    /* Centra el contenido verticalmente. */
+    align-items: center;
+    /* Define el color de fondo. */
+    background-color: rgb(51, 19, 125);
+    /* Convierte el cuadrado en un círculo. */
+    border-radius: 50%;
+    /* Añade espacio interior. */
+    padding: 10px;
+    /* Define el color del texto. */
+    color: white;
+    /* Pone el texto en negrita. */
+    font-weight: bold;
+    /* Define el ancho. */
+    width: 150px;
+    /* Define la altura. */
+    height: 150px;
+}
+
+/* Figura con dos radios diferentes y contenido en columna. */
+.square-3 {
+    /* Centra el contenido y coloca sus elementos uno debajo de otro. */
+    /* Activa Flexbox. */
+    display: flex;
+    /* Coloca los elementos en vertical. */
+    flex-direction: column;
+    /* Centra el contenido horizontalmente. */
+    justify-content: center;
+    /* Centra el contenido verticalmente. */
+    align-items: center;
+    /* Define el color de fondo. */
+    background-color: rgb(111, 19, 125);
+
+    /* Redondea dos esquinas con radios diferentes. */
+    border-radius: 12px 28px;
+
+    /* Añade espacio interior. */
+    padding: 10px;
+    /* Define el color del texto. */
+    color: white;
+    /* Pone el texto en negrita. */
+    font-weight: bold;
+    /* Define el ancho. */
+    width: 150px;
+    /* Define la altura. */
+    height: 150px;
+}
+
+.square-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(125, 19, 86);
+
+    border-radius: 0 40px;
+
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    height: 150px;
+}
+
+.square-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(125, 19, 38);
+
+    border-radius: 6px 20px 40px 8px;
+
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    height: 150px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------*/
+@media (max-width: 575.98px) {
+    section {
+        /* Coloca una sola figura por fila en pantallas pequeñas. */
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    section {
+        /* Coloca dos figuras por fila en pantallas medianas. */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

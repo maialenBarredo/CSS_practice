@@ -1,0 +1,488 @@
+/* Fuente principal de toda la página. */
+body {
+    /* Define la fuente del texto. */
+    font-family: "Baloo 2", "Segoe UI", sans-serif;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* Centra el contenido de la cabecera y añade una línea inferior. */
+header {
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el contenido horizontalmente. */
+    justify-content: center;
+    /* Centra el contenido verticalmente. */
+    align-items: center;
+    /* Añade un borde negro en la parte inferior. */
+    border-bottom: 2px solid black;
+    /* Redondea las esquinas del borde. */
+    border-radius: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* Centra la sección principal dentro de la página. */
+main {
+    /* Activa Flexbox. */
+    display: flex;
+    /* Coloca las secciones una debajo de otra. */
+    flex-direction: column;
+    /* Centra la sección horizontalmente. */
+    justify-content: center;
+    /* Centra la sección verticalmente. */
+    align-items: center;
+    /* Añade un margen exterior. */
+    margin: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.general {
+    /* Activa el diseño de cuadrícula. */
+    display: grid;
+    /* Crea tres columnas iguales. */
+    grid-template-columns: repeat(3, 1fr);
+    /* Añade espacio interior. */
+    padding: 20px;
+    /* Separa los elementos de la cuadrícula. */
+    gap: 2rem;
+    /* Añade un borde inferior azul. */
+    border-bottom: 4px solid rgb(0, 85, 255);
+    /* Redondea las esquinas. */
+    border-radius: 15px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.flexbox {
+    /* Define el color de fondo. */
+    background-color: rgb(71, 133, 188);
+    /* Define el color del texto. */
+    color: white;
+    /* Añade espacio interior. */
+    padding: 10px;
+    /* Define el ancho. */
+    width: 200px;
+    /* Define la altura. */
+    height: 200px;
+    /* Redondea las esquinas. */
+    border-radius: 8px;
+
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el contenido horizontalmente. */
+    justify-content: center;
+    /* Centra el contenido verticalmente. */
+    align-items: center;
+}
+
+.flexbox span {
+    /* Añade un borde azul al texto. */
+    border: 3px solid rgb(16, 21, 175);
+    /* Añade espacio interior al texto. */
+    padding: 3px;
+    /* Redondea las esquinas del borde. */
+    border-radius: 8px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.grid {
+    /* Define el color de fondo. */
+    background-color: rgb(71, 188, 159);
+    /* Define el color del texto. */
+    color: white;
+    /* Añade espacio interior. */
+    padding: 10px;
+    /* Define el ancho. */
+    width: 200px;
+    /* Define la altura. */
+    height: 200px;
+    /* Redondea las esquinas. */
+    border-radius: 8px;
+
+    /* Activa CSS Grid. */
+    display: grid;
+    /* Crea tres columnas iguales. */
+    grid-template-columns: repeat(3, 1fr);
+    /* Crea tres filas iguales. */
+    grid-template-rows: repeat(3, 1fr);
+    /* Separa las celdas de la cuadrícula. */
+    gap: 0.4rem;
+}
+
+.grid span {
+    /* Añade un borde verde oscuro. */
+    border: 3px solid rgb(3, 82, 73);
+    /* Añade espacio interior. */
+    padding: 3px;
+    /* Redondea las esquinas. */
+    border-radius: 8px;
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el contenido horizontalmente. */
+    justify-content: center;
+    /* Centra el contenido verticalmente. */
+    align-items: center;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.place-items {
+    /* Define el color de fondo. */
+    background-color: rgb(88, 199, 98);
+    /* Define el color del texto. */
+    color: white;
+    /* Añade espacio interior. */
+    padding: 10px;
+    /* Define el ancho. */
+    width: 200px;
+    /* Define la altura. */
+    height: 200px;
+    /* Redondea las esquinas. */
+    border-radius: 8px;
+
+    /* Centra los elementos dentro de una cuadrícula. */
+    place-items: center;
+}
+
+.place-items span {
+    /* Añade un borde verde oscuro. */
+    border: 3px solid rgb(3, 82, 73);
+    /* Añade espacio interior. */
+    padding: 3px;
+    /* Redondea las esquinas. */
+    border-radius: 8px;
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el contenido horizontalmente. */
+    justify-content: center;
+    /* Centra el contenido verticalmente. */
+    align-items: center;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.justify-content {
+    /* Activa Flexbox. */
+    display: flex;
+    /* Coloca los ejemplos en una columna. */
+    flex-direction: column;
+    /* Añade espacio interior. */
+    padding: 20px;
+    /* Separa los ejemplos. */
+    gap: 2rem;
+    /* Añade un borde inferior azul. */
+    border-bottom: 4px solid rgb(0, 85, 255);
+    /* Redondea las esquinas. */
+    border-radius: 15px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.flex-start {
+    /* Activa CSS Grid. */
+    display: grid;
+    /* Crea dos columnas iguales. */
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.flex-start h3 {
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el título horizontalmente. */
+    justify-content: center;
+    /* Centra el título verticalmente. */
+    align-items: center;
+}
+
+.f-s {
+    /* Añade espacio interior. */
+    padding: 10px;
+    /* Define el ancho. */
+    width: 400px;
+    /* Define la altura. */
+    height: 100px;
+    /* Redondea las esquinas. */
+    border-radius: 8px;
+    /* Añade un borde negro. */
+    border: 3px solid black;
+
+    /* Activa Flexbox. */
+    display: flex;
+    /* Coloca los elementos al inicio. */
+    justify-content: flex-start;
+    /* Separa los elementos. */
+    gap: 2rem;
+    /* Centra los elementos verticalmente. */
+    align-items: center;
+}
+
+.f-s div {
+    /* Define la altura del cuadrado. */
+    height: 60px;
+    /* Define el ancho del cuadrado. */
+    width: 60px;
+    /* Define el color de fondo. */
+    background-color: rgb(27, 102, 253);
+    /* Redondea las esquinas. */
+    border-radius: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.flex-end {
+    /* Activa CSS Grid. */
+    display: grid;
+    /* Crea dos columnas iguales. */
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.flex-end h3 {
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el título horizontalmente. */
+    justify-content: center;
+    /* Centra el título verticalmente. */
+    align-items: center;
+}
+
+.f-e {
+    /* Añade espacio interior. */
+    padding: 10px;
+    /* Define el ancho. */
+    width: 400px;
+    /* Define la altura. */
+    height: 100px;
+    /* Redondea las esquinas. */
+    border-radius: 8px;
+    /* Añade un borde negro. */
+    border: 3px solid black;
+
+    /* Activa Flexbox. */
+    display: flex;
+    /* Coloca los elementos al final. */
+    justify-content: flex-end;
+    /* Separa los elementos. */
+    gap: 2rem;
+    /* Centra los elementos verticalmente. */
+    align-items: center;
+}
+
+.f-e div {
+    /* Define la altura del cuadrado. */
+    height: 60px;
+    /* Define el ancho del cuadrado. */
+    width: 60px;
+    /* Define el color de fondo. */
+    background-color: rgb(0, 194, 23);
+    /* Redondea las esquinas. */
+    border-radius: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.center {
+    /* Activa CSS Grid. */
+    display: grid;
+    /* Crea dos columnas iguales. */
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.center h3 {
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el título horizontalmente. */
+    justify-content: center;
+    /* Centra el título verticalmente. */
+    align-items: center;
+}
+
+.c {
+    /* Añade espacio interior. */
+    padding: 10px;
+    /* Define el ancho. */
+    width: 400px;
+    /* Define la altura. */
+    height: 100px;
+    /* Redondea las esquinas. */
+    border-radius: 8px;
+    /* Añade un borde negro. */
+    border: 3px solid black;
+
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra los elementos horizontalmente. */
+    justify-content: center;
+    /* Separa los elementos. */
+    gap: 2rem;
+    /* Centra los elementos verticalmente. */
+    align-items: center;
+}
+
+.c div {
+    /* Define la altura del cuadrado. */
+    height: 60px;
+    /* Define el ancho del cuadrado. */
+    width: 60px;
+    /* Define el color de fondo. */
+    background-color: rgb(181, 194, 0);
+    /* Redondea las esquinas. */
+    border-radius: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.space-between {
+    /* Activa CSS Grid. */
+    display: grid;
+    /* Crea dos columnas iguales. */
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.space-between h3 {
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el título horizontalmente. */
+    justify-content: center;
+    /* Centra el título verticalmente. */
+    align-items: center;
+}
+
+.s-p {
+    /* Añade espacio interior. */
+    padding: 10px;
+    /* Define el ancho. */
+    width: 400px;
+    /* Define la altura. */
+    height: 100px;
+    /* Redondea las esquinas. */
+    border-radius: 8px;
+    /* Añade un borde negro. */
+    border: 3px solid black;
+
+    /* Activa Flexbox. */
+    display: flex;
+    /* Reparte los elementos dejando espacio entre ellos. */
+    justify-content: space-between;
+    /* Separa los elementos. */
+    gap: 2rem;
+    /* Centra los elementos verticalmente. */
+    align-items: center;
+}
+
+.s-p div {
+    /* Define la altura del cuadrado. */
+    height: 60px;
+    /* Define el ancho del cuadrado. */
+    width: 60px;
+    /* Define el color de fondo. */
+    background-color: rgb(226, 104, 4);
+    /* Redondea las esquinas. */
+    border-radius: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.space-around {
+    /* Activa CSS Grid. */
+    display: grid;
+    /* Crea dos columnas iguales. */
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.space-around h3 {
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el título horizontalmente. */
+    justify-content: center;
+    /* Centra el título verticalmente. */
+    align-items: center;
+}
+
+.s-a {
+    /* Añade espacio interior. */
+    padding: 10px;
+    /* Define el ancho. */
+    width: 400px;
+    /* Define la altura. */
+    height: 100px;
+    /* Redondea las esquinas. */
+    border-radius: 8px;
+    /* Añade un borde negro. */
+    border: 3px solid black;
+
+    /* Activa Flexbox. */
+    display: flex;
+    /* Reparte los elementos con espacio alrededor. */
+    justify-content: space-around;
+    /* Separa los elementos. */
+    gap: 2rem;
+    /* Centra los elementos verticalmente. */
+    align-items: center;
+}
+
+.s-a div {
+    /* Define la altura del cuadrado. */
+    height: 60px;
+    /* Define el ancho del cuadrado. */
+    width: 60px;
+    /* Define el color de fondo. */
+    background-color: rgb(194, 42, 0);
+    /* Redondea las esquinas. */
+    border-radius: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.space-evenly {
+    /* Activa CSS Grid. */
+    display: grid;
+    /* Crea dos columnas iguales. */
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.space-evenly h3 {
+    /* Activa Flexbox. */
+    display: flex;
+    /* Centra el título horizontalmente. */
+    justify-content: center;
+    /* Centra el título verticalmente. */
+    align-items: center;
+}
+
+.s-e {
+    /* Añade espacio interior. */
+    padding: 10px;
+    /* Define el ancho. */
+    width: 400px;
+    /* Define la altura. */
+    height: 100px;
+    /* Redondea las esquinas. */
+    border-radius: 8px;
+    /* Añade un borde negro. */
+    border: 3px solid black;
+
+    /* Activa Flexbox. */
+    display: flex;
+    /* Reparte los elementos con espacios iguales. */
+    justify-content: space-evenly;
+    /* Separa los elementos. */
+    gap: 2rem;
+    /* Centra los elementos verticalmente. */
+    align-items: center;
+}
+
+.s-e div {
+    /* Define la altura del cuadrado. */
+    height: 60px;
+    /* Define el ancho del cuadrado. */
+    width: 60px;
+    /* Define el color de fondo. */
+    background-color: rgb(224, 4, 118);
+    /* Redondea las esquinas. */
+    border-radius: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
